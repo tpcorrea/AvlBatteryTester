@@ -1,9 +1,13 @@
 // hash table created using the AVL E-STORAGE LV DC POWER UNIT INTERFACE CAN ENHANCED SINGLE MODE V2.6
 
+import java.text.MessageFormat; //import for use uint32
+
 // This message contains voltage, current and power setpoints and is sent at a 
 // maximum frequency of 1 kHz.
 public class Set_U_I{
-
+    ID = 0xB1;
+    UInt32 Set_U; //min/max - 0/1200V
+    Int32  Set_I; //min/max - -1200/1200A
 }
 
 // This message contains commands for system status control, e.g. switching 
